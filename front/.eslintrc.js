@@ -8,7 +8,8 @@ module.exports = {
         "plugin:react/recommended",
         "standard",
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -21,11 +22,13 @@ module.exports = {
     "plugins": [
         "react",
         "@typescript-eslint",
-        "jest"
+        "jest",
+        "prettier"
     ],
     "rules": {
         "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": ["error"]
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "prettier/prettier": "error"
     },
     "settings": {
         "react": {
